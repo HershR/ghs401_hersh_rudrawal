@@ -7,11 +7,9 @@ public class randomStuff
        //Random num to int   
     int age = (int)(Math.random()*8)+367;
     
-    System.out.println("The number is " + age + " !");
-}
-    
-    
-    
+    System.out.println("The number is " + age + "!");
+    }   
+    System.out.println("Today is Tuesday");
     } // instance variables - replace the example below with your own
 }
 
