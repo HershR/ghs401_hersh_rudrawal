@@ -28,10 +28,10 @@ public class javaProj
     }
         for(int i=0;i<myArray.length; i++){
             int remainder = myArray[i]%2;  
-        if(remainder == 0){
-           System.out.println("Element #"+(i+1)+" in the array is "+myArray[i]+" is even");
-         }else
-           System.out.println("Element #"+(i+1)+" in the array is "+myArray[i]+" is odd");
+            if(remainder == 0){
+                System.out.println("Element #"+(i+1)+" in the array is "+myArray[i]+" is even");
+            }else
+            System.out.println("Element #"+(i+1)+" in the array is "+myArray[i]+" is odd");
     }
     }
 }       
