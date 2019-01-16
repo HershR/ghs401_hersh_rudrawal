@@ -1,25 +1,34 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-        
-public class Robot extends Actor
-    {
+
+
+public class Amb extends Actor
+{
+
     public static int speed;
     public static int battery;
     public static int rotate;
-    public Robot(){
+    public int edge = 1;
+    public Amb(){
                 speed=2;
                 battery=1;
                 rotate=15;
     }
-    public Robot(int speed,int battery, int rotate){
-                this.speed=speed;
-                this.battery=battery;
-                this.rotate=rotate;
+    public Amb(int speed,int battery, int rotate){
+        this.speed=speed;
+        this.battery=battery;
+        this.rotate=rotate;
     }
     public void act() 
     {
         move(this.speed);
         if(isAtEdge()){
-            turn(rotate);
+            edge=edge-1;
+            if(edge==0){
+                turn(rotate);
+                setImage("ambulance.png");
+            }
+        }else if(isAtEdge()==false){
+            edge=1;
         }
         int myWorldVar= ((MyWorld) getWorld()).getBattery();
         int myWorldVar2= ((MyWorld) getWorld()).getCounter();

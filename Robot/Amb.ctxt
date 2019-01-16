@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Amb
+comment1.params=
+comment1.target=Amb()
+comment2.params=speed\ battery\ rotate
+comment2.target=Amb(int,\ int,\ int)
+comment3.params=
+comment3.target=void\ act()
+numComments=4
