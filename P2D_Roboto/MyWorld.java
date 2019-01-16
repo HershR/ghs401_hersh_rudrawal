@@ -4,16 +4,24 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     
-    public int batteryLife;
-    public int batteryLife(){
-        batteryLife = ((Mr_Roboto)(getWorld().getObjects(Mr_Roboto.class).get(0)).battery);//(World) getObjects(Mr_Roboto.class).get(0).battery();//Mr_Roboto.battery; //
-        System.out.println("Battery"+batteryLife);
+   public int counter = 3;
+    public int batteryLife= Mr_Roboto.battery;
+    public int getCounter(){
+        counter = counter-1;
+        if (counter==0 ){
+            batteryLife = batteryLife-1;
+            counter=3;
+            }
+        //System.out.println("Counter: " + counter);
+        //System.out.println("Battery: " + batteryLife);
+        return counter;
+    }
+     public int getBattery(){
         return batteryLife;
     }
-    public MyWorld()
-    {    
+    public MyWorld(){    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(500, 500, 1); 
-        addObject(new Mr_Roboto(5,5,5),200,300);
+        addObject(new Mr_Roboto(2,500,90),100,100);
     }
-}
+    }

@@ -14,22 +14,28 @@ public class Mr_Roboto extends Actor
         this.turnA=22;
     }
     public Mr_Roboto(int speed, int battery, int turnA){
-        turn(90);
+        
         this.speed=speed;
         this.battery=battery;
         this.turnA=turnA;
     }
     public void act() 
     {
-        move(speed);
+        move(this.speed);
         counter = counter - 1;
         if(isAtEdge()){
+            move(-1);
             turn(turnA);
-            int myworld=((MyWorld)getWorld()).batteryLife;
-            System.out.println("Battery Life: "+ myworld);
+        }
+        int myWorldVar= ((MyWorld) getWorld()).getBattery();
+        int myWorldVar2= ((MyWorld) getWorld()).getCounter();
+        if(myWorldVar>0){
+            System.out.println("Speed:"+this.speed+"\tBattery: "+myWorldVar+"\tRotation: "+this.turnA);
+        }else if(myWorldVar<=0){
+            speed=0;
+            turnA=0;
+            System.out.println("Battery empty");
         }
         
-        
-        
     }    
-}
+}    
