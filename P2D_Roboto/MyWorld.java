@@ -23,5 +23,6 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(500, 500, 1); 
         addObject(new Mr_Roboto(2,500,90),100,100);
+        addObject(new Mr_Roboto(2,200,90),200,100);
     }
     }
