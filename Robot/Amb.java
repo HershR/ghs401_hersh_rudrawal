@@ -1,18 +1,18 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
-
-public class Amb extends Actor
-{
-
+    import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+    
+    
+    public class Amb extends Actor
+    {
+    
     public static int speed;
     public static int battery;
     public static int rotate;
-    public int edge = 1;
+    public int edge = 0;
     public Amb(){
-                speed=2;
-                battery=1;
-                rotate=15;
-    }
+        speed=2;
+        battery=1;
+        rotate=15;
+     }
     public Amb(int speed,int battery, int rotate){
         this.speed=speed;
         this.battery=battery;
@@ -22,14 +22,15 @@ public class Amb extends Actor
     {
         move(this.speed);
         if(isAtEdge()){
-            edge=edge-1;
-            if(edge==0){
-                turn(rotate);
-                setImage("ambulance.png");
-            }
-        }else if(isAtEdge()==false){
-            edge=1;
-        }
+            edge=edge+1;
+            //if(edge==0){
+                turn(90);
+                System.out.println("Edge: "+ edge);
+                //setImage("ambulance.png");
+            //}
+        }//else if(isAtEdge()==false){
+           // edge=1;
+        //}
         int myWorldVar= ((MyWorld) getWorld()).getBattery();
         int myWorldVar2= ((MyWorld) getWorld()).getCounter();
         //System.out.println("Battery: " + myWorldVar);

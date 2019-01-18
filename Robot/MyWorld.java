@@ -9,8 +9,8 @@ public class MyWorld extends World
             batteryLife = batteryLife-1;
             counter=3;
             }
-        System.out.println("Counter: " + counter);
-        System.out.println("Battery: " + batteryLife);
+        //System.out.println("Counter: " + counter);
+        //System.out.println("Battery: " + batteryLife);
         return counter;
     }
      public int getBattery(){
@@ -21,6 +21,6 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 500, 1); 
         //addObject(new Robot(4,400,90),100,100);
-        addObject(new Amb(4,400,90),100,100);
+        addObject(new Amb(4,400,0),100,100);
     }
 }
