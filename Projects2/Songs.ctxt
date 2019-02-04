@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=cost\ artist\ title\ good\ lengthInSec
+comment0.target=Songs(int,\ java.lang.String,\ java.lang.String,\ boolean,\ int)
+comment1.params=
+comment1.target=int\ getLengthInSec()
+comment2.params=newSeconds
+comment2.target=void\ setLengthInSec(int)
+comment3.params=
+comment3.target=java.lang.String\ convertToMinSec()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
