@@ -9,8 +9,6 @@ public class PasswordChecker
     
     public static void main()
     {
-        
-        
         String thing = JOptionPane.showInputDialog("Which school do you go to?");
         if(thing.toLowerCase().equals(school.toLowerCase()))
         {
