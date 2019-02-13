@@ -40,16 +40,6 @@ public class PasswordChecker
         }else{
             System.out.println("Wrong school idiot...");
         }
-        
-        
-        
-        
-        //String pass =JOptionPane.showInputDialog("Enter password:");
-        //while(pass.length()<6 || pass.contains("+")|| pass.contains("-") || pass.contains("*")|| pass.contains("@")){
-        //  pass =JOptionPane.showInputDialog("Enter stronger password:");
-        //
-        //}
-        //System.out.println("ok");
     }
     
     
