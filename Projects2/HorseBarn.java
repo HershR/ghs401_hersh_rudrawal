@@ -1,7 +1,8 @@
 
 public class HorseBarn
 {
-    private Horse[] spaces;;
+    private Horse[] spaces;
+    //spaces = {"Trigger", null, "Silver", "Lady", null, "Patches", "Duke"};
     public int findHorseSpace(String name){
         for(int i=0;i<spaces.length;i++){
             if(spaces[i].equals(name)){
@@ -11,10 +12,10 @@ public class HorseBarn
         return -1;
     }
     public void consolidate(){
-        Horse[] tempSpaces;;
+        Horse[] tempSpaces= new Horse[spaces.length];;
         for(int i=0;i<spaces.length;i++){
             if(spaces[i]!=null){
-                //tempSpaces=
+                tempSpaces[i]=spaces[i];
             }
         
         
@@ -22,8 +23,9 @@ public class HorseBarn
     
     } 
     public static void main(){
-        //findHorseSpaces("A");
-    
+        //Horse trigger= new Horse;
+        //Horse silver = new Horse;
+        
     
     }
 }
