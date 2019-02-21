@@ -41,8 +41,7 @@ public class HorseBarn
           spaces = tempSpaces;
       } // end method consolidate
       
-   public String toString()
-      {
+   public String toString(){
       String results = new String();
       for( int index = 0; index < spaces.length; index++ )
          {

@@ -4,11 +4,11 @@ public class Driver
     // instance variables - replace the example below with your own
     public static void main() {
         
-      Family myFamily = new Family();
-      System.out.println(myFamily);
-      myFamily.sortByAge();
+      Family family = new Family();
+      System.out.println(family.toString());
+      family.sortByAge();
       System.out.println();
-      System.out.println(myFamily);
+      System.out.println(family.toString());
         
     }
 
