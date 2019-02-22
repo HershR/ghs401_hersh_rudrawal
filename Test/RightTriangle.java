@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 public class RightTriangle
     {
     private static int base;
-    public static int height;
+    private static int height;
                             
     public RightTriangle(){ 
         this.base = 0;
@@ -13,8 +13,8 @@ public class RightTriangle
         this.height=height;
         }
     public static int getBase(){
-        int output=base;
-        return output;
+        //int output=base;
+        return base;
             }
     public void setBase(int nbase){
         nbase=Integer.parseInt(JOptionPane.showInputDialog("New base: "));
