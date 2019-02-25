@@ -5,8 +5,14 @@ public class ClassRosterDriver
    public static void main()
       {
       ArrayList<Student> n = new ArrayList<Student>();
+     
       // 1. Creating and printing ClassRoster    
       ClassRoster myPeriod1 = new ClassRoster( "AP Computer Science",n);
+     myPeriod1.addStudent(new Student( "Super", "Man", 12, 1, 1, 1, 1, 1 ));
+     myPeriod1.addStudent(new Student( "Silver", "Surfer", 11, 2, 2, 2, 2, 2  ));
+     myPeriod1.addStudent(new Student( "Captain", "America", 12, 3, 3, 3, 3, 3  ));
+     myPeriod1.addStudent(new Student( "Bat", "Man", 11, 4, 4, 4, 4, 4  ));
+     myPeriod1.addStudent(new Student( "Black", "Panther", 11, 5, 5, 5, 5, 5  ));
       System.out.println( "Class Roster:\n" + myPeriod1 );
 
       // 2. Testing studentWithMaxGPA

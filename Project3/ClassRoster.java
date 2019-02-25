@@ -14,13 +14,14 @@ public class ClassRoster
       {
       int c=0;
       double g=0;
+      String output="";
       for(int i=0;i<studentList.size();i++ ){
         if((studentList.get(i)).calcGPA()>g){
             g=(studentList.get(i)).calcGPA();
-            c=i;
+            output=(studentList.get(i)).getLastName();
         }
         }
-      String output=studentList.get(c)+"";
+      
       return output;
       
       } // end method studentWithMaxGPA 
@@ -43,7 +44,8 @@ public class ClassRoster
       
    public void addStudent(int index, Student newStudent)
       {
-         studentList.add(index,newStudent);
+         
+          studentList.add(index-1,newStudent);
       } // end method addStudent
       
    public String toString()
