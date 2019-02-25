@@ -25,7 +25,7 @@ public class ClassRosterDriver
       System.out.println( "\n\n" );
 
       //5 . Testing addStudent in a specific location
-      myPeriod1.addStudent( new Student( "Zoo", "Lander", 11, 4, 5, 6, 4, 5),2 );
+      myPeriod1.addStudent( 2,new Student( "Zoo", "Lander", 11, 4, 5, 6, 4, 5) );
       System.out.println( "Class Roster:\n" + myPeriod1 );
                           
       System.out.println( "\n\n" );

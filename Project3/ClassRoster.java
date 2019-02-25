@@ -12,23 +12,27 @@ public class ClassRoster
       
    public String studentWithMaxGPA()
       {
-      String output="";
-      /*for(Student stud: studentList ){
-          System.out.println(studentList.get(2));
-          System.out.println(Student.calcGPA());
-        if(studentList.calcGPA(i)==4){
-            output= ((studentList[i]).getLastName()+(studentList[i]).calcGPA);
-            return output;
+      int c=0;
+      double g=0;
+      for(int i=0;i<studentList.size();i++ ){
+        if((studentList.get(i)).calcGPA()>g){
+            g=(studentList.get(i)).calcGPA();
+            c=i;
         }
         }
-      output=studentLife;**/
+      String output=studentList.get(c)+"";
       return output;
+      
       } // end method studentWithMaxGPA 
        
-   public int dropStudent( double minGradeLevel )
+   public int dropStudent( double minGPA )
       {
-      studentList.calcGPA();//.remove(minGradeLevel);
-      return 0;
+      for(int i=0;i<studentList.size();i++){
+          if((studentList.get(i)).calcGPA()<=minGPA){
+              studentList.remove(i);
+        }
+        }
+          return 0;
       } // end method dropStudent
       
    public void addStudent( Student newStudent )
@@ -45,12 +49,12 @@ public class ClassRoster
    public String toString()
       {
       String output = new String();
-      // output += "Class: " + courseName + "\n";
+       output += "Class: " + courseName + "\n";
        
-      // for( int index = 0; index < studentList.size(); index++ )
-      //    {
-      //    output += studentList.get( index ) + "\n";  
-      //    } // end for
+       for( int index = 0; index < studentList.size(); index++ )
+          {
+          output += studentList.get( index ) + "\n";  
+          } // end for
       return output;
       } // end method toString
    } // end ClassRoster
