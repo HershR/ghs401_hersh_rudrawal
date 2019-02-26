@@ -20,10 +20,10 @@ public class Rocket extends Actor
        
     }
    public double calcTripTravelTime(){
-    double dist=calcTripDistance();
-    int speed = this.speed;
-    double time=(calcTripDistance()/speed);
-    return time;
+       double dist=calcTripDistance();
+       int speed = this.speed;
+       double time=(calcTripDistance()/speed);
+       return time;
     }
    public void act (){
        move(this.speed);
