@@ -1,4 +1,4 @@
-package P4E_DownloadsInfoProjectTemplate;
+ 
 
 public class DownloadInfo
    {

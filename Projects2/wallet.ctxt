@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=mA
+comment0.target=wallet(money[])
+comment1.params=
+comment1.target=double\ getAvgAmount()
+numComments=2

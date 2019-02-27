@@ -1,4 +1,4 @@
-package P4E_DownloadsInfoProjectTemplate;
+ 
 
 import java.util.List;
 import java.util.ArrayList;
@@ -17,10 +17,10 @@ public class MusicDownLoadsDriver
       playlist.add( "Hey Jude" );
       playlist.add( "Beat It" );
       
-      //System.out.println( "Music Downloads:\n" + myDownLoads );  
-      //System.out.println( "Testing method getDownloadInfo for \"Aqualung\"\n" + myDownLoads.getDownloadInfo( "Aqualung" ) + "\n" );
-      //System.out.println( "Testing method getDownloadInfo for \"Too Legit\"\n" + myDownLoads.getDownloadInfo( "Too Legit" ) + "\n" );
+      System.out.println( "Music Downloads:\n" + myDownLoads );  
+      System.out.println( "Testing method getDownloadInfo for \"Aqualung\"\n" + myDownLoads.getDownloadInfo( "Aqualung" ) + "\n" );
+      System.out.println( "Testing method getDownloadInfo for \"Too Legit\"\n" + myDownLoads.getDownloadInfo( "Too Legit" ) + "\n" );
       myDownLoads.updateDownloads( playlist );
-      //System.out.println( "Testing method updateDownloads: \n" + myDownLoads );
+      System.out.println( "Testing method updateDownloads: \n" + myDownLoads );
       } // end method main
    } // end class Driver

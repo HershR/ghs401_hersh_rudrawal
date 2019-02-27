@@ -18,21 +18,21 @@ public class javaProj
    
         System.out.println("Error");
     }else {
-        System.out.println("Max vaule is: "+max+", "+"Min vaule is: "+ min);
-        for(int i=0; i<myArray.length; i++)
-        {
-            myArray[i] = (int)((Math.random()*maxMiniusMin)+min);
-        }
-        for(int i=0;i<myArray.length; i++){
-            System.out.println(myArray[i]);
-        }
+    System.out.println("Max vaule is: "+max+", "+"Min vaule is: "+ min);
+    for(int i=0; i<myArray.length; i++)
+    {
+        myArray[i] = (int)((Math.random()*maxMiniusMin)+min);
+    }
+    for(int i=0;i<myArray.length; i++){
+        System.out.println(myArray[i]);
+    }
         for(int i=0;i<myArray.length; i++){
             int remainder = myArray[i]%2;  
             if(remainder == 0){
                 System.out.println("Element #"+(i+1)+" in the array is "+myArray[i]+" is even");
             }else
             System.out.println("Element #"+(i+1)+" in the array is "+myArray[i]+" is odd");
-        }
+    }
     }
 }       
 }

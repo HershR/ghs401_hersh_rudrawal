@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Mr_Roboto
+comment1.params=
+comment1.target=Mr_Roboto()
+comment2.params=speed\ battery\ turnA
+comment2.target=Mr_Roboto(int,\ int,\ int)
+comment3.params=
+comment3.target=void\ act()
+numComments=4
