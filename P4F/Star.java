@@ -4,7 +4,8 @@ public class Star extends Actor
 {
     private int lum;
     public Star(){
-        this.lum=(int)(Math.random()*500+500);;
+        this.lum=(int)(Math.random()*500+500);
+        setLocation((int)(Math.random()*200),(int)(Math.random()*200));
     }
     public int getlum(){
         return this.lum;

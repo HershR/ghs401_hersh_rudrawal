@@ -10,15 +10,20 @@ import java.util.List;
 public class Ship extends Actor
 {
     List<Star> starData;
-    ArrayList<Star> starList; 
+    List<Star> starList; 
     public Ship(){
-        ArrayList<Star> starList=new ArrayList<Star>(0);
-        
+        List<Star> starList=new ArrayList<Star>();
+        starList.add(new Star());
+        starList.add(new Star());
+        starList.add(new Star());
+        starList.add(new Star());
+        starList.add(new Star());
+        starList.add(new Star());
     }
     public double calcAverageLuminosity(){
         double av=0;
         for(Star curr: starData){
-        
+            
         }
         return av;
     }
