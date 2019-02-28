@@ -10,17 +10,28 @@ import java.util.List;
 public class Ship extends Actor
 {
     List<Star> starData;
-    ArrayList<Star> starList; 
+    //ArrayList<Star> starList; 
     public Ship(){
-        ArrayList<Star> starList=new ArrayList<Star>(0);
+       starData=new ArrayList<Star>();
         
     }
     public double calcAverageLuminosity(){
         double av=0;
         for(Star curr: starData){
-        
+            av+=(double)curr.getlum();
         }
-        return av;
+        return av/starData.size();
+    }
+    public int calcMaxLuminosity()
+    {
+        int max = 0;
+        for (Star currStar: starData)
+        {
+            if (currStar.getlum() > max){
+                max = currStar.getlum();
+            }
+        }
+        return max;
     }
     public void act() 
     {
@@ -30,5 +41,7 @@ public class Ship extends Actor
             turn(43);
         }
         starData=getWorld().getObjects(Star.class);
+        getWorld().showText("Average: "+((int)(calcAverageLuminosity())),80,60);
+        getWorld().showText("Max: "+((int)(calcMaxLuminosity())),80,80);
     }    
 }

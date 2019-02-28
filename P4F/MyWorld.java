@@ -19,5 +19,12 @@ public class MyWorld extends World
         super(600, 400, 1); 
         showText("",200,200);
         
+        addObject(new Star(), 20,200);
+        addObject(new Star(), 300,500);
+        addObject(new Star(), 200,200);
+        addObject(new Star(), 55,340);
+        addObject(new Star(), 120,30);
+        addObject(new Star(), 460,200);
+        addObject(new Ship(),500,335);
     }
 }

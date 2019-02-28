@@ -14,7 +14,7 @@ public class Star extends Actor
     }
     public String toString(){
     
-        return "";
+        return "Luminosity: " + this.lum;
     }
     public void act() 
     {
@@ -22,7 +22,6 @@ public class Star extends Actor
         getWorld().showText("Lum: "+this.lum,getX(),getY());
         if(this.lum<=0){
              getWorld().removeObject(this);
-             
         }
     }    
 }
