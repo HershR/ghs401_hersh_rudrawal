@@ -28,12 +28,14 @@ public class ClassRoster
        
    public int dropStudent( double minGPA )
       {
-      for(int i=0;i<studentList.size();i++){
+        int n=0;
+          for(int i=0;i<studentList.size();i++){
           if((studentList.get(i)).calcGPA()<=minGPA){
               studentList.remove(i);
+              n++;
+            }
         }
-        }
-          return 0;
+          return n;
       } // end method dropStudent
       
    public void addStudent( Student newStudent )
