@@ -1,16 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 import java.util.List;
-/**
- * Write a description of class Ship here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Ship extends Actor
 {
-    List<Star> starData;
-    List<Star> starList; 
+    public List<Star> starData;
+    public List<Star> starList; 
     public Ship(){
         List<Star> starList=new ArrayList<Star>();
         starList.add(new Star());
@@ -22,10 +16,10 @@ public class Ship extends Actor
     }
     public double calcAverageLuminosity(){
         double av=0;
-        for(Star curr: starData){
-            
+        for(int i=0;i<starList.size();i++){
+            av+=(starList.get(i)).getlum();
         }
-        return av;
+        return av/starList.size();
     }
     public void act() 
     {
