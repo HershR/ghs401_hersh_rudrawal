@@ -47,18 +47,17 @@ public class ClassRoster
    public void addStudent(int index, Student newStudent)
       {
          
-          studentList.add(index-1,newStudent);
+          studentList.add(index,newStudent);
       } // end method addStudent
       
    public String toString()
       {
       String output = new String();
-       output += "Class: " + courseName + "\n";
-       
-       for( int index = 0; index < studentList.size(); index++ )
+      output += "Class: " + courseName + "\n"; 
+      for( int index = 0; index < studentList.size(); index++ )
           {
           output += studentList.get( index ) + "\n";  
-          } // end for
+      } // end for
       return output;
       } // end method toString
    } // end ClassRoster

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=BlueJ()
+comment1.params=legs\ alive\ canFly\ harvest
+comment1.target=BlueJ(int,\ boolean,\ boolean,\ boolean)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3

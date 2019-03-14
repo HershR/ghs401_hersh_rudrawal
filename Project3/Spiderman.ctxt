@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Spiderman()
+comment1.params=canFly\ wallClimb
+comment1.target=Spiderman(boolean,\ boolean)
+comment2.params=
+comment2.target=void\ useWeb()
+comment3.params=
+comment3.target=java.lang.String\ getWebFuel()
+comment4.params=
+comment4.target=java.lang.String\ getMotto()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

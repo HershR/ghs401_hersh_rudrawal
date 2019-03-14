@@ -17,14 +17,15 @@ public class SystemLog
     }
    
    public List<LogMessage> removeMessage(String keyword){
-        List<LogMessage> messageList = new ArrayList<LogMessage>();
-        for(int i=0;i<messageList.size();){
+        List<LogMessage> nmessageList = new ArrayList<LogMessage>();
+        for(int i=0;i<messageList.size();i++){
             if(((messageList.get(i)).containsWord(keyword))==true){
+                nmessageList.add(messageList.get(i));
                 messageList.remove(i);
                 i--;
             }
         }
-        return messageList;
+        return nmessageList;
     }
        
 

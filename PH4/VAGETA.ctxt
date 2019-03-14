@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=VAGETA
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ VAGETA\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=VAGETA()
+comment2.params=age
+comment2.target=VAGETA(int)
+comment3.params=
+comment3.target=int\ getAge()
+comment4.params=setter
+comment4.target=void\ setAge(int)
+comment5.params=
+comment5.target=void\ act()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
