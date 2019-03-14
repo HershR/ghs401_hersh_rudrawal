@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=C3PO()
+comment1.params=battery\ numberLanguages
+comment1.target=C3PO(int,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getTask()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

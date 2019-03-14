@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Terminator()
+comment1.params=battery\ killCount
+comment1.target=Terminator(int,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getTask()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4
