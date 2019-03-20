@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=c\ n\ l
+comment0.target=Burger(int,\ java.lang.String,\ boolean)
+comment1.params=portion
+comment1.target=java.lang.String\ foodPortions(int)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3

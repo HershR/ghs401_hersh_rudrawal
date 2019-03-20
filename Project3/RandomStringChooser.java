@@ -3,18 +3,21 @@ public class RandomStringChooser
 {
     private ArrayList<String> array;
     private int index;
-    public RandomStringChooser(ArrayList<String> word)
+    public RandomStringChooser(String[] word)
     {
-       array=word;
+        array= new ArrayList<String>();
+        for(String curr:word){
+            this.array.add(curr);
+        }
+        
     }
     public String getNext(){
         String output="";
-        index=(int)(Math.random()*this.array.size());
+        
         if(this.array.size()>0){
-            output=this.array.get(index);
-            this.array.remove(index);
+            index=(int)(Math.random()*this.array.size());
             
-            return output;
+            return this.array.remove(index);
         }else{
             return "NONE";
         }
