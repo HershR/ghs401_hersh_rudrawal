@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=i\ p
+comment0.target=DuckTape(boolean,\ double)
+comment1.params=
+comment1.target=java.lang.String\ rollLenght()
+comment2.params=
+comment2.target=java.lang.String\ shipped()
+comment3.params=
+comment3.target=boolean\ isInStock()
+numComments=4
