@@ -10,6 +10,9 @@ public class LightHouse extends Actor
     {
         move(3);
         turnTowards(getX(),1);
-        
-    }    
+        if(isAtEdge())
+        {
+            getWorld().removeObject(this);
+        }
+    }
 }

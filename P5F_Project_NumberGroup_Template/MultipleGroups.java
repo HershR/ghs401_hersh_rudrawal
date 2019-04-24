@@ -5,8 +5,7 @@ public class MultipleGroups implements NumberGroup
    {
     private ArrayList<NumberGroup> groupList; 
 
-    public MultipleGroups()
-    {
+    public MultipleGroups(){
        groupList = new ArrayList<NumberGroup>();
        groupList.add(new Range(-3,0));
        groupList.add(new Range(7,100));

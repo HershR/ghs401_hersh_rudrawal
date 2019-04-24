@@ -2,7 +2,7 @@ import java.io.*;
 public class prob00
 {
     public static void main() throws Exception{
-        File file = new File("Prob00.in.txt");
+        File file = new File("Prob03.in.txt");
         BufferedReader br = new BufferedReader(new FileReader(file));
         String st= br.readLine();//reads first line
         int cases=Integer.parseInt(st);
