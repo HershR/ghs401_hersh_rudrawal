@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ start()
+comment1.params=statement
+comment1.target=java.lang.String\ getResponse(java.lang.String)
+comment2.params=s\ w
+comment2.target=boolean\ containsWord(java.lang.String,\ java.lang.String)
+comment3.params=s\ w
+comment3.target=boolean\ containsWord2(java.lang.String,\ java.lang.String[])
+comment4.params=statement\ keyPhrase
+comment4.target=java.lang.String\ likePhrase(java.lang.String,\ java.lang.String)
+comment5.params=statement\ keyPhrase
+comment5.target=java.lang.String\ whatIsPhrase(java.lang.String,\ java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getRandom()
+numComments=7
